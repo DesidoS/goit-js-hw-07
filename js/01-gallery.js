@@ -21,7 +21,7 @@ galleryContainer.insertAdjacentHTML("beforeend", markup);
 
 galleryContainer.addEventListener("click", handleClick)
 
-function handleClick(event) {    
+function handleClick(event) {
     event.preventDefault();
     if (event.target.parentNode.nodeName !== "A") {
         return;
@@ -32,9 +32,9 @@ function handleClick(event) {
 
     // const visible = instance.visible()
     // if (visible) {   
-        window.addEventListener('keydown', (event) => {
-            if (event.code === 'Escape') {
-                instance.close()
-            }},{once:true})
-        }
+    window.addEventListener('keydown', (event) => {
+        if (event.code === 'Escape') {
+            instance.close()
+        }},{once:true})
+    }
     // }
