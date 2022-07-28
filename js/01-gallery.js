@@ -19,7 +19,6 @@ alt="${description}"
 
 galleryContainer.insertAdjacentHTML("beforeend", markup);
 
-
 galleryContainer.addEventListener("click", handleClick)
 
 function handleClick(event) {    
@@ -28,10 +27,7 @@ function handleClick(event) {
         return;
     }
     
-    
-    const instance = basicLightbox.create(`
-    <img src="${event.target.parentNode.href}">
-    `)
+    const instance = basicLightbox.create(`<img src="${event.target.parentNode.href}">`)
     instance.show()
 
     // const visible = instance.visible()

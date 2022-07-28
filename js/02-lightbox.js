@@ -17,7 +17,6 @@ galleryContainer.addEventListener("click", handleClick)
 
 function handleClick(event) {
     event.preventDefault();
-    console.log(event.target.alt)
     
     var lightbox = new SimpleLightbox('.gallery a', {
         captions: true,
